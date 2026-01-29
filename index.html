@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alvin Tang - Saipwell</title>
+    <meta name="description" content="Digital Business Card of Alvin Tang, Head of Sales – Indo-Pacific at SAIPWELL ELECTRIC CO., LTD">
+    <style>
+        :root {
+            --primary-color: #0d4085;
+            --bg-color: #f0f2f5;
+            --text-color: #333;
+            --label-color: #666;
+            --link-color: #0d4085;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: #fff;
+            width: 100%;
+            max-width: 480px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            padding: 40px 30px;
+            text-align: center;
+        }
+
+        .header { margin-bottom: 25px; }
+        .logo { max-width: 180px; height: auto; margin-bottom: 15px; }
+        h1 { color: var(--primary-color); font-size: 24px; font-weight: 700; margin-bottom: 5px; }
+        .title { color: var(--label-color); font-size: 14px; margin-bottom: 10px; }
+        .company { color: #000; font-weight: 600; font-size: 14px; margin-bottom: 2px; text-transform: uppercase; }
+        .tagline { color: var(--label-color); font-size: 13px; }
+        .divider { height: 1px; background-color: #eee; margin: 25px 0; }
+
+        .info-list { text-align: left; margin-bottom: 30px; }
+        .info-item { margin-bottom: 15px; }
+        .info-label { display: block; color: var(--label-color); font-size: 13px; margin-bottom: 2px; }
+        .info-value { color: var(--link-color); text-decoration: none; font-size: 15px; font-weight: 500; display: block; }
+        .info-value:hover { text-decoration: underline; }
+
+        .button-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 20px; }
+        
+        .btn {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 12px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background-color 0.2s;
+            cursor: pointer;
+            border: none;
+            width: 100%;
+        }
+        .btn:hover { background-color: #0a326b; }
+        .footer { margin-top: 30px; color: #999; font-size: 12px; }
+
+        @media (max-width: 400px) { .button-grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <div class="header">
+            <!-- Ensure local image file is named 'logo.png' -->
+            <img src="logo.png" alt="Saipwell Logo" class="logo">
+            
+            <h1>Alvin Tang</h1>
+            <div class="title">Head of Sales – Indo-Pacific</div>
+            <div class="company">SAIPWELL ELECTRIC CO., LTD</div>
+            <div class="tagline">Focus on Enclosure Solutions</div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="info-list">
+            <div class="info-item">
+                <span class="info-label">Email</span>
+                <a href="mailto:alvin@saipwell.com" class="info-value">alvin@saipwell.com</a>
+            </div>
+            <div class="info-item">
+                <span class="info-label">Phone / WhatsApp</span>
+                <a href="https://wa.me/8615026506417" class="info-value">+86 150 2650 6417</a>
+            </div>
+            <div class="info-item">
+                <span class="info-label">Website</span>
+                <a href="http://www.saipwell.com" target="_blank" class="info-value">www.saipwell.com</a>
+            </div>
+            <div class="info-item">
+                <span class="info-label">Address</span>
+                <div class="info-value" style="color: #333; font-weight: 400;">
+                    Building 10, Lane 388, Luodian Road<br>
+                    Baoshan District, Shanghai, China
+                </div>
+            </div>
+        </div>
+
+        <div class="button-grid">
+            <a href="https://wa.me/8615026506417" class="btn">WhatsApp Chat</a>
+            <a href="mailto:alvin@saipwell.com" class="btn">Send Email</a>
+            <a href="https://www.linkedin.com/in/alvintangchina/" class="btn">LinkedIn Profile</a>
+            
+            <!-- Direct link to the .vcf file -->
+            <a href="Alvin.vcf" class="btn">Save to Contacts</a>
+        </div>
+
+        <div class="footer">
+            © Saipwell Electric Co., Ltd
+        </div>
+    </div>
+
+</body>
+</html>
